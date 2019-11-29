@@ -94,7 +94,7 @@ const backportForLabel = async ({
         "```",
         `Then, create a pull request where the \`base\` branch is \`${base}\` and the \`compare\`/\`head\` branch is \`${definedHead}\`.`,
       ].join("\n"),
-      number: pullRequestNumber,
+      issue_number: pullRequestNumber,
       owner,
       repo,
     });
