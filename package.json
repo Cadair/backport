@@ -28,6 +28,9 @@
   "name": "backport",
   "private": true,
   "scripts": {
+    "start": "probot run ./lib/index.js",
+    "postinstall": "npm run build",
+    "build": "tsc -p tsconfig.json",
     "check-build": "tsc --build tsconfig.build.json",
     "prettier": "prettier --ignore-path .gitignore \"**/*.{js,json,md,ts,yml}\"",
     "test": "jest",
